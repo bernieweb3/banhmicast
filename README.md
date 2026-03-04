@@ -69,6 +69,7 @@ The system uses **Chainlink Runtime Environment (CRE)** as a privacy-preserving 
 | `packages/cre-workflow` | Go + WASM | Chainlink CRE: LMSR compute + Walrus HTTP |
 | `packages/cre` | JavaScript | Off-chain helpers: LMSR engine, batch processor, Walrus client |
 | `packages/shared` | JavaScript | Shared constants, types |
+| `packages/frontend` | React + Vite | Web UI: Explore, War Room (WorldTable + BettingPanel), Portfolio |
 
 ---
 
@@ -163,6 +164,10 @@ cd banhmicast
 # Install JavaScript dependencies (CRE helpers + tests)
 cd packages/cre && npm install
 cd ../shared && npm install
+
+# Install and run frontend
+cd ../frontend && npm install
+npm run dev   # → http://localhost:5173
 ```
 
 ### Build Move Contracts
@@ -279,6 +284,12 @@ banhmicast/
 │   │       ├── batch-processor.js
 │   │       ├── walrus-client.js
 │   │       └── decryptor.js
+│   ├── frontend/              # React web UI (Vite)
+│   │   └── src/
+│   │       ├── components/    # MarketCard, WorldTable, BettingPanel, etc.
+│   │       ├── pages/         # ExplorePage, MarketPage, PortfolioPage
+│   │       ├── styles/        # Obsidian Crust design system CSS
+│   │       └── lib/           # sui-config.js (contract addresses)
 │   └── shared/                # Shared constants & types
 ├── scripts/
 │   └── test-all.sh
