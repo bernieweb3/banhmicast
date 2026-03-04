@@ -1,0 +1,26 @@
+# === Sui Move ===
+packages/move/build/
+packages/move/.build/
+
+# === Node / CRE ===
+node_modules/
+packages/cre/node_modules/
+packages/frontend/node_modules/
+dist/
+coverage/
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# === Environment ===
+.env
+.env.local
+.env.*.local
+
+# === Logs ===
+*.log
+npm-debug.log*
