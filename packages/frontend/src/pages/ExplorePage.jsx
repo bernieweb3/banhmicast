@@ -15,7 +15,7 @@ const DEMO_MARKETS = [
         endsIn: '14d 06h',
     },
     {
-        id: 'demo-market-2',
+        id: '0xaa00000000000000000000000000000000000000000000000000000000000002',
         title: 'Sui TVL > $5B by Q3 2026?',
         description: 'Will the Sui DeFi ecosystem surpass $5 billion in total value locked?',
         outcomes: ['Yes', 'No'],
@@ -26,7 +26,7 @@ const DEMO_MARKETS = [
         endsIn: '30d 12h',
     },
     {
-        id: 'demo-market-3',
+        id: '0xbb00000000000000000000000000000000000000000000000000000000000003',
         title: 'Bitcoin All-Time High Before July 2026?',
         description: 'Will Bitcoin break its previous all-time high before July 1st, 2026?',
         outcomes: ['Yes', 'No'],
@@ -37,7 +37,7 @@ const DEMO_MARKETS = [
         endsIn: '3d 18h',
     },
     {
-        id: 'demo-market-4',
+        id: '0xcc00000000000000000000000000000000000000000000000000000000000004',
         title: 'Fed Cuts Rate in June 2026?',
         description: 'Federal Reserve interest rate cut prediction. Linked to macro & election outcomes.',
         outcomes: ['Cut', 'Hold', 'Hike'],
@@ -48,7 +48,7 @@ const DEMO_MARKETS = [
         endsIn: '21d 00h',
     },
     {
-        id: 'demo-market-5',
+        id: '0xdd00000000000000000000000000000000000000000000000000000000000005',
         title: 'Chainlink CCIP Launches on Sui?',
         description: 'Will Chainlink Cross-Chain Interoperability Protocol be live on Sui mainnet in 2026?',
         outcomes: ['Yes', 'No'],
@@ -59,7 +59,7 @@ const DEMO_MARKETS = [
         endsIn: '60d 00h',
     },
     {
-        id: 'demo-market-6',
+        id: '0xee00000000000000000000000000000000000000000000000000000000000006',
         title: 'Vietnam National Football — SEA Games Gold?',
         description: 'Will Vietnam win gold in football at the 2027 SEA Games?',
         outcomes: ['Gold', 'No Gold'],

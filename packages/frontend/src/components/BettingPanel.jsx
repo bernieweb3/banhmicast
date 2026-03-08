@@ -30,6 +30,13 @@ export default function BettingPanel({ market, selectedOutcome, outcomes, prices
     const handleSubmit = useCallback(async () => {
         if (!canSubmit) return;
 
+        // Guard: market must have a valid Sui object ID (hex address)
+        if (!market.id || !market.id.startsWith('0x') || market.id.length < 10) {
+            setErrorMsg('Invalid market ID — this market is not deployed on-chain.');
+            setTxState('error');
+            return;
+        }
+
         try {
             // Step 1: Signing
             setTxState('signing');

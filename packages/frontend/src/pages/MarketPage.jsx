@@ -4,7 +4,9 @@ import WorldTable from '../components/WorldTable';
 import BettingPanel from '../components/BettingPanel';
 import './MarketPage.css';
 
-// Demo market data — in production, fetched from Sui via useSuiMarket hook
+// Demo market data — in production, fetched from Sui via useSuiMarket hook.
+// NOTE: All IDs must be valid 64-char hex Sui addresses (0x-prefixed) so that
+// the Sui SDK's tx.object() serialization doesn't crash with a ValiError.
 const DEMO_MARKET_DATA = {
     '0x352a63e9364222707eeeaae0d49bac9bce2b089a2ceeeebf0716f7701932c32f': {
         id: '0x352a63e9364222707eeeaae0d49bac9bce2b089a2ceeeebf0716f7701932c32f',
@@ -17,8 +19,8 @@ const DEMO_MARKET_DATA = {
         lastBatchId: 42,
         isActive: true,
     },
-    'demo-market-2': {
-        id: 'demo-market-2',
+    '0xaa00000000000000000000000000000000000000000000000000000000000002': {
+        id: '0xaa00000000000000000000000000000000000000000000000000000000000002',
         title: 'Sui TVL > $5B by Q3 2026?',
         description: 'Will the Sui DeFi ecosystem surpass $5 billion in total value locked?',
         outcomes: ['Yes', 'No'],
@@ -28,8 +30,8 @@ const DEMO_MARKET_DATA = {
         lastBatchId: 18,
         isActive: true,
     },
-    'demo-market-3': {
-        id: 'demo-market-3',
+    '0xbb00000000000000000000000000000000000000000000000000000000000003': {
+        id: '0xbb00000000000000000000000000000000000000000000000000000000000003',
         title: 'Bitcoin All-Time High Before July 2026?',
         description: 'Will Bitcoin break its previous all-time high before July 1st, 2026?',
         outcomes: ['Yes', 'No'],
@@ -39,8 +41,8 @@ const DEMO_MARKET_DATA = {
         lastBatchId: 156,
         isActive: true,
     },
-    'demo-market-4': {
-        id: 'demo-market-4',
+    '0xcc00000000000000000000000000000000000000000000000000000000000004': {
+        id: '0xcc00000000000000000000000000000000000000000000000000000000000004',
         title: 'Fed Cuts Rate in June 2026?',
         description: 'Federal Reserve interest rate cut prediction.',
         outcomes: ['Cut', 'Hold', 'Hike'],
@@ -50,8 +52,8 @@ const DEMO_MARKET_DATA = {
         lastBatchId: 7,
         isActive: true,
     },
-    'demo-market-5': {
-        id: 'demo-market-5',
+    '0xdd00000000000000000000000000000000000000000000000000000000000005': {
+        id: '0xdd00000000000000000000000000000000000000000000000000000000000005',
         title: 'Chainlink CCIP Launches on Sui?',
         description: 'Will Chainlink CCIP be live on Sui mainnet in 2026?',
         outcomes: ['Yes', 'No'],
@@ -61,8 +63,8 @@ const DEMO_MARKET_DATA = {
         lastBatchId: 3,
         isActive: true,
     },
-    'demo-market-6': {
-        id: 'demo-market-6',
+    '0xee00000000000000000000000000000000000000000000000000000000000006': {
+        id: '0xee00000000000000000000000000000000000000000000000000000000000006',
         title: 'Vietnam National Football — SEA Games Gold?',
         description: 'Will Vietnam win gold in football at the 2027 SEA Games?',
         outcomes: ['Gold', 'No Gold'],
