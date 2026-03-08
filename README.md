@@ -303,17 +303,11 @@ banhmicast/
 
 ## License
 
-This project is licensed under a **Custom Proprietary License**. In summary:
+This project is licensed under the **MIT License**.
 
-- **Research / Educational use** requires prior written permission from the author.
-- **Commercial use** is strictly prohibited.
-- **Modification** requires prior written permission from the author.
-- **Hackathon submissions** are permitted only with written permission **and** ≥ 70% original code.
-- **Startup competition use** is unconditionally prohibited.
+Copyright (c) 2025 Phú Nhuận Builder — Bernie Nguyen
 
-See [`LICENSE`](./LICENSE) for the full, legally binding terms.
-
-📧 Permission requests: **bernie.web3@gmail.com**
+See [`LICENSE`](./LICENSE) for the full terms.
 
 ---
 
